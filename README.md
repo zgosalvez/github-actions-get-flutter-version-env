@@ -1,4 +1,4 @@
-# GitHub Action — Get Flutter Version
+# GitHub Action — Get the Flutter Version Environment
 
 This GitHub Action (written in composite run steps) allows you to leverage GitHub Actions to get the [Flutter](https://flutter.dev) environment version from the pubspec file. This is primarily used before using the [Flutter action](https://github.com/marketplace/actions/flutter-action).
 
@@ -34,7 +34,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Get Flutter Version
         id: get-flutter-version
-        use: zgosalvez/github-actions-get-flutter-version@v1.0.0
+        use: zgosalvez/github-actions-get-flutter-version-env@v1.0.0
       - name: Set up Flutter
         uses: subosito/flutter-action@v1
         with:
