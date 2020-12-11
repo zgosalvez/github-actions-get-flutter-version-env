@@ -32,9 +32,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Get Flutter Version
+      - name: Get Flutter version
         id: get-flutter-version
-        use: zgosalvez/github-actions-get-flutter-version-env@v1.0.0
+        use: zgosalvez/github-actions-get-flutter-version-env@v1
       - name: Set up Flutter
         uses: subosito/flutter-action@v1
         with:
