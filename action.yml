@@ -1,5 +1,6 @@
 name: 'Get the Flutter Version Environment'
 description: 'Get the Flutter environment version from the pubspec file'
+author: 'Zennon Gosalvez'
 outputs:
   version: 
     description: "The Flutter version"
