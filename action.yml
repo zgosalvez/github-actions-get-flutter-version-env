@@ -1,20 +1,16 @@
 name: 'Get the Flutter Version Environment'
 description: 'Get the Flutter environment version from the pubspec file'
 author: 'Zennon Gosalvez'
+inputs:
+  pubspec-file-path:
+    description: 'The pubspec.yaml file path. Optional. Default: `pubspec.yaml`'
+    default: 'pubspec.yaml'
 outputs:
   version: 
     description: "The Flutter version"
-    value: ${{ steps.get-flutter-version.outputs.version }}
 runs:
-  using: "composite"
-  steps: 
-    - id: get-flutter-version
-      run: | # https://github.com/subosito/flutter-action/issues/47#issuecomment-675821988
-        set -e
-
-        brew install yq
-        echo "::set-output name=version::$( yq read pubspec.yaml environment.flutter )"
-      shell: bash
+  using: 'node12'
+  main: 'dist/index.js'
 branding:
   icon: 'minimize'
   color: 'blue'
