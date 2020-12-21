@@ -34,7 +34,9 @@ jobs:
         uses: actions/checkout@v2
       - name: Get Flutter version
         id: get-flutter-version
-        use: zgosalvez/github-actions-get-flutter-version-env@v1
+        uses: zgosalvez/github-actions-get-flutter-version-env@v1
+        with:
+          pubspec-file-path: app/pubspec.yaml
       - name: Set up Flutter
         uses: subosito/flutter-action@v1
         with:
