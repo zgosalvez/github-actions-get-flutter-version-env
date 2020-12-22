@@ -46,7 +46,11 @@ jobs:
 ```
 
 ## Shout-out
-A special mention goes to [@daohoangson](https://github.com/daohoangson), who came up with the solution at [subosito/flutter-action/issues/47#issuecomment-675821988](https://github.com/subosito/flutter-action/issues/47#issuecomment-675821988).
+A special mention goes to [@daohoangson](https://github.com/daohoangson), who came up with the initial solution at [subosito/flutter-action/issues/47#issuecomment-675821988](https://github.com/subosito/flutter-action/issues/47#issuecomment-675821988).
+
+### Flutter Workflows
+
+This is used in my opinionated [GitHub Actions: Flutter Workflows](https://github.com/zgosalvez/github-actions-flutter-workflows) repository along with other actions for a complete end-to-end DevOps experience.
 
 ## License
 The scripts and documentation in this project are released under the [MIT License](LICENSE)
