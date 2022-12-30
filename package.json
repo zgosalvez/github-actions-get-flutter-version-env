@@ -1,7 +1,7 @@
 {
-  "name": "github-actions-ensure-sha-pinned-actions",
+  "name": "github-actions-get-flutter-version-env",
   "version": "1.1.0",
-  "description": "Ensure that GitHub Actions are pinned to full length commit SHAs",
+  "description": "Get the Flutter environment version from the pubspec file",
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint .",
