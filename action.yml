@@ -9,7 +9,7 @@ outputs:
   version: 
     description: "The Flutter version"
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
 branding:
   icon: 'minimize'
