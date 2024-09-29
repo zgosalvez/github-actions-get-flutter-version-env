@@ -22,7 +22,7 @@
     "yaml": "^2.5.1"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.38.0",
+    "@vercel/ncc": "^0.38.2",
     "eslint": "^9.11.1"
   }
 }
