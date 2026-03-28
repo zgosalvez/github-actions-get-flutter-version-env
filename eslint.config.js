@@ -1,3 +1,5 @@
-module.exports = {
-    ignores: ["dist/"],
-};
+export default [
+    {
+        ignores: ["dist/"],
+    },
+];

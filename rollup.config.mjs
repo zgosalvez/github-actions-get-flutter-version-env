@@ -3,9 +3,13 @@ import commonjs from '@rollup/plugin-commonjs';
 
 export default {
   input: 'src/index.js',
+  onwarn(warning, warn) {
+    if (warning.code === 'THIS_IS_UNDEFINED' || warning.code === 'CIRCULAR_DEPENDENCY') return;
+    warn(warning);
+  },
   output: {
     file: 'dist/index.js',
-    format: 'cjs',
+    format: 'es',
     sourcemap: false,
   },
   plugins: [

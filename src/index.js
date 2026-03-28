@@ -1,12 +1,12 @@
-const core = require('@actions/core');
-const fs = require('fs');
-const yaml = require('yaml');
+import * as core from '@actions/core';
+import { readFileSync } from 'fs';
+import { parse } from 'yaml';
 
 async function run() {
   try {
     const pubspecFilePath = core.getInput('pubspec-file-path');
-    const fileContents = fs.readFileSync(pubspecFilePath, 'utf8');
-    const yamlContents = yaml.parse(fileContents);
+    const fileContents = readFileSync(pubspecFilePath, 'utf8');
+    const yamlContents = parse(fileContents);
     const environment = yamlContents['environment'];
 
     if (environment === undefined) {
