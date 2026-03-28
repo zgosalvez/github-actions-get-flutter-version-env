@@ -2,6 +2,7 @@
   "name": "github-actions-get-flutter-version-env",
   "version": "1.1.0",
   "description": "Get the Flutter environment version from the pubspec file",
+  "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint .",
